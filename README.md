@@ -1,0 +1,2 @@
+# gorilla-translation
+ウホウホ
