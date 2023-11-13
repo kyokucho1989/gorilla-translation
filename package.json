@@ -1,0 +1,31 @@
+{
+  "name": "gorilla-translation",
+  "version": "1.0.2",
+  "description": "uhouho",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node test/test.mjs",
+    "fix": "prettier --write . && eslint --fix .",
+    "lint": "prettier --check . && eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyokucho1989/gorilla-translation.git"
+  },
+  "keywords": [
+    "gorilla-trans"
+  ],
+  "author": "kyokucho1989",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kyokucho1989/gorilla-translation/issues"
+  },
+  "homepage": "https://github.com/kyokucho1989/gorilla-translation#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.8"
+  }
+}
