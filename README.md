@@ -30,7 +30,7 @@ Gorilla.convertToUho("こんにちは、わたしはゴリラです。");
 ```javascript
 import Gorilla from "gorilla-translation";
 Gorilla.convertToHuman(
-  "ホッホウーホ ホッホウホッ ホッホウホッ ウ？ウーッ ホホゥウホホ"
+  "ホッホウーホ ホッホウホッ ホッホウホッ ウ？ウーッ ホホゥウホホ",
 );
 
 // Outpu: ばななくれ
@@ -56,7 +56,7 @@ Gorilla.convertToUho("バナナくれ");
 // Output: ホッホウーホ ホッホウホッ ホッホウホッ ウ？ウーッ ホホゥウホホ
 
 Gorilla.convertToHuman(
-  "ホッホウーホ ホッホウホッ ホッホウホッ ウ？ウーッ ホホゥウホホ"
+  "ホッホウーホ ホッホウホッ ホッホウホッ ウ？ウーッ ホホゥウホホ",
 );
 
 // Output: ばななくれ

@@ -56,7 +56,7 @@ class Gorilla {
     const regex = new RegExp("[^あ-んア-ンA-Za-z0-9。,、.]");
     if (regex.test(originalText)) {
       throw new Error(
-        `無効な入力です。ひらがな小文字（ゃゅょ以外）や、漢字や記号(!?・スペース)は含めないでください。`
+        `無効な入力です。ひらがな小文字（ゃゅょ以外）や、漢字や記号(!?・スペース)は含めないでください。`,
       );
     }
 
