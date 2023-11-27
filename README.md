@@ -1,7 +1,5 @@
 # gorilla-translation
 
-ウホウホ
-
 # ウ？ウホホ ウ！ホッホ ホホゥウゥ ウ！ホホゥ
 
 ウ？ホゥ ホッホウホ？ ウホッウホウ ウホッウホー ウホッウホッ ホッホウーッ ウ？ホッホ ホホゥウホッ ホホゥウッホ ホッホウホ？ ウ？ホゥ ホッホウゥ ホッホウーホ ホホゥウ？ ホホッウホウ ホホゥホゥ ホホッホッホ ウ？ウーッ ウ？ホ！ ホホッウホ？ ホゥウッホ
@@ -20,7 +18,7 @@ $ npm install gorilla-translation
 
 ```javascript
 import Gorilla from "gorilla-translation";
-Gorilla.convertToUho("こんにちは、わたしはゴリラです。");
+console.log(Gorilla.convertToUho("こんにちは、わたしはゴリラです。"));
 
 // Output: ウ？ホゥ ホホゥホゥ ホッホウホウ ホゥウ！ ホッホウーッ ウホーウ！ ホホゥウーッ ホゥウーッ ウ？ホ！ ホッホウーッ ウ？ホッホ ホホゥウホッ ホホゥウッホ ホゥホ！ ホゥウッホ ウホーウ？
 ```
@@ -29,11 +27,13 @@ Gorilla.convertToUho("こんにちは、わたしはゴリラです。");
 
 ```javascript
 import Gorilla from "gorilla-translation";
-Gorilla.convertToHuman(
-  "ホッホウーホ ホッホウホッ ホッホウホッ ウ？ウーッ ホホゥウホホ",
+console.log(
+  Gorilla.convertToHuman(
+    "ホッホウーホ ホッホウホッ ホッホウホッ ウ？ウーッ ホホゥウホホ"
+  )
 );
 
-// Outpu: ばななくれ
+// Output: ばななくれ
 ```
 
 # Keep in mind:
@@ -51,13 +51,25 @@ Gorilla.convertToUho("バナナぁ 頂戴!");
 Error: 無効な入力です。ひらがな小文字（ゃゅょ以外）や、漢字や記号(!?・スペース)は含めないでください。
 */
 
-Gorilla.convertToUho("バナナくれ");
+console.log(Gorilla.convertToUho("バナナくれ"));
 
 // Output: ホッホウーホ ホッホウホッ ホッホウホッ ウ？ウーッ ホホゥウホホ
 
-Gorilla.convertToHuman(
-  "ホッホウーホ ホッホウホッ ホッホウホッ ウ？ウーッ ホホゥウホホ",
+console.log(
+  Gorilla.convertToHuman(
+    "ホッホウーホ ホッホウホッ ホッホウホッ ウ？ウーッ ホホゥウホホ"
+  )
 );
 
 // Output: ばななくれ
+```
+
+# When an Error Occurs
+
+If you encounter the error a ` SyntaxError: Cannot use import statement outside a module`, please add the following to your project's `package.json`. If you don't have a package.json, create one.
+
+```
+{
+  "type": "module"
+}
 ```
